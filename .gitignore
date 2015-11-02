@@ -1,13 +1,13 @@
-# History files
+Rprof.out
+.RData
 .Rhistory
-.Rapp.history
-
-# Example code in package build process
-*-Ex.R
-
-# RStudio files
-.Rproj.user/
-
-# produced vignettes
-vignettes/*.html
-vignettes/*.pdf
+.Rproj.user
+*.project
+.settings/
+src/*.dll
+src/*.o
+src/*.so
+src/symbols.rds
+src-i386/
+src-x64/
+inst/doc
