@@ -23,4 +23,3 @@ import_lynx <- function()
   
   # Convert to "uts_vector"
 }
-
