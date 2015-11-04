@@ -1,1 +1,7 @@
+# Imports from other packages
+import(uts)
+import(lubridate)
+
+# Export data download functions
 export(download_CO2)
+export(import_lynx)

@@ -4,11 +4,7 @@
 \alias{download_CO2}
 \title{Mauna Loa Atmospheric CO2 Concentration}
 \usage{
-
-  download_CO2(file = "ftp://aftp.cmdl.noaa.gov/products/trends/co2/co2_mm_mlo.txt")
-}
-\arguments{
-\item{file}{the download location of the CO2 dataset.}
+download_CO2()
 }
 \description{
 This function downloads the monthly average atmospheric CO2 concentration (in parts per million), as measured at the Mauna Loa observatory, from a website by the \href{http://www.esrl.noaa.gov/gmd/ccgg/trends/}{NOAA Earth System Research Laboratory}. The downloaded data is subsequently imported into \R and returned as a \code{\link{uts}} object.
@@ -16,7 +12,9 @@ This function downloads the monthly average atmospheric CO2 concentration (in pa
 \examples{
 CO2 <- download_CO2()
 plot(CO2)
-table(diff(time(CO2)))    # most consecutive observations are one month apart
+
+# Most consecutive observations are one month apart
+table(diff(time(CO2)))
 }
 \seealso{
 The \code{\link[datasets:co2]{co2}} dataset in base \R is very similar, but ends in 1997 and has several missing values filled in using linear interpolation.
