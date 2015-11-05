@@ -1,6 +1,6 @@
 #' Paris Monthly Precipitation 1688-2009
 #' 
-#' This function downloads the monthly precipitation (in mm) in Paris from 1688 to 2009 from a website by the \href{https://www.ncdc.noaa.gov/paleo/study/8761}{NOAA National Centers for Environmental Information}. The downloaded data is subsequently imported into \R and returned as a \code{\link{uts}} object. 
+#' This function downloads the monthly precipitation (in mm) in Paris from 1688 to 2009 from a website by the \href{https://www.ncdc.noaa.gov/paleo/study/8761}{NOAA National Climatic Data Center}. The downloaded data is subsequently imported into \R and returned as a \code{\link{uts}} object. 
 #' 
 #' @keywords datasets
 #' @examples
