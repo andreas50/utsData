@@ -12,7 +12,7 @@ This function downloads a 20 million year (ma) reconstruction of the atmposheric
 \examples{
 CO2_20ma <- download_CO2_20ma()
 plot(CO2_20ma, max_dt=dyears(1e6), type="o")      # connect observations less than 1 ma apart
-plot(tail_t(CO2_20ma, dyears(2e6)),  type="o")    # plot the two million most recent years
+plot(tail_t(CO2_20ma, dyears(1.5e6)),  type="o") # plot the 1.5 million most recent years
 }
 \seealso{
 \code{\link[datasets:co2]{co2}}, \code{\link{download_CO2}}
