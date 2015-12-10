@@ -20,7 +20,7 @@ download_CO2 <- function()
   on.exit(unlink(tmp_file))
   download.file(file, destfile=tmp_file, quiet=TRUE)
   
-  # Import data & remove test section
+  # Import data & remove text section
   data <- scan(tmp_file, what="character", quiet=TRUE, sep="\n")
   start_pos <- grep("^1958", data)[1]
   data <- data[start_pos:length(data)]

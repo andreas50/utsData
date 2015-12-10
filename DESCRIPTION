@@ -4,7 +4,7 @@ Date: 2015-12-04
 Title: Example Data Sets of Unevenly Spaced Time Series
 Author: Andreas Eckner <andreas@eckner.com>
 Maintainer: Andreas Eckner <andreas@eckner.com>
-Depends: lubridate, uts
+Depends: lubridate, uts, utsMultivariate
 Description: Example datasets of unevenly spaced time series. The datasets can
     be loaded, viewed, plotted, and analyzed using the R packages uts, utsMult,
     and utsTrendSeasonality.

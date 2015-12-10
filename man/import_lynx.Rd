@@ -7,12 +7,17 @@
 import_lynx()
 }
 \description{
-This function imports the lynx data from Elton and Nicholson (1942) from a local CSV file provided by the \code{utsData} package. It subsequently returns the data as as \code{uts_vector} object.
+This function imports the lynx data from Elton and Nicholson (1942) from a local CSV file. It subsequently returns the data as as \code{\link{uts_vector}} object.
 }
 \examples{
-#lynx42 <- import_lynx()
-#save(lynx_1942, file="lynx42.rda")
-#plot(lynx42, max_dt=dyears(2), type="o", cex=0.5)    # not implemented yet
+lynx_1942 <- import_lynx()
+plot(lynx_1942[["MacKenzie River"]])
+#plot(lynx_1942, max_dt=dyears(2), type="o", cex=0.5)    # not implemented yet
+
+# Save data
+\dontrun{
+  save(lynx_1942, file=file.path("data", "lynx_1942.rda"), compress="xz")
+}
 }
 \references{
 Elton, C. and Nicholson, M. (1942). \href{http://www.jstor.org/stable/1358}{The Ten-Year Cycle in Numbers of the Lynx in Canada}. \emph{Journal of Animal Ecology}, Vol 11, No. 2, pp. 215-244

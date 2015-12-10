@@ -1,9 +1,11 @@
 # Imports from other packages
-import(uts)
 import(lubridate)
+import(uts)
+import(utsMultivariate)
 
 # Export data download functions
 export(download_CO2)
 export(download_CO2_20ma)
+export(download_grapes)
 export(dowload_paris_precipitation)
 export(import_lynx)
