@@ -22,6 +22,8 @@ table(round(diff(co2_ml$times) * 12 / 365))  # most observations are one month a
 \seealso{
 Users without internet connection can access the already imported data via \code{\link{co2_ml}}. However, to get the most recent data it is recommended to use this function.
 
+\code{\link{co2_20ma}} for a 20 million year reconstruction.
+
 The \code{\link[datasets:co2]{co2}} dataset in base \R is very similar, but ends in 1997 and has several missing values filled in using linear interpolation.
 }
 \keyword{datasets}

@@ -5,7 +5,7 @@
 \title{Mauna Loa Atmospheric CO2 Concentration (Up-To-Date)}
 \format{A \code{\link[uts:uts]{uts}} object.}
 \source{
-This dataset was imported by the \code{\link{download_co2_ml}} function from a website by the \href{http://www.esrl.noaa.gov/gmd/ccgg/trends/}{NOAA Earth System Research Laboratory}.
+This dataset was imported by \code{\link{download_co2_ml}} from a website by the \href{http://www.esrl.noaa.gov/gmd/ccgg/trends/}{NOAA Earth System Research Laboratory}.
 }
 \description{
 The monthly average atmospheric CO2 concentration (in parts per million), as measured at the \href{http://www.esrl.noaa.gov/gmd/obop/mlo/}{Mauna Loa observatory}.
@@ -17,6 +17,8 @@ table(round(diff(co2_ml$times) * 12 / 365))  # most observations are one month a
 }
 \seealso{
 \code{\link{download_co2_ml}} gets the most recent data.
+
+\code{\link{co2_20ma}} for a 20 million year reconstruction.
 
 The \code{\link[datasets:co2]{co2}} dataset in base \R is very similar, but ends in 1997 and has several missing values filled in using linear interpolation.
 }

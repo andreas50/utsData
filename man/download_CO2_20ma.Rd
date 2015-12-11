@@ -7,10 +7,7 @@
 download_co2_20ma()
 }
 \description{
-This function downloads a 20 million year (ma) reconstruction of the atmposheric CO2 concentration (in parts per million) from a website by the \href{https://www.ncdc.noaa.gov/paleo/study/10423}{NOAA Earth System Research Laboratory}. The downloaded data is subsequently imported into \R and returned as a \code{\link{uts}} object.
-}
-\details{
-Users without internet connection can access the already imported data using \code{data(co2_20ma)}.
+This function downloads a 20 million year (ma) reconstruction of the atmposheric CO2 concentration (in parts per million) from a website by the \href{https://www.ncdc.noaa.gov/paleo/study/10423}{NOAA Earth System Research Laboratory}. The downloaded data is subsequently imported into \R and returned as a \code{\link[uts:uts]{uts}} object.
 }
 \examples{
 co2_20ma <- download_co2_20ma()
@@ -23,7 +20,11 @@ plot(tail_t(co2_20ma, dyears(1.5e6)),  type="o")  # plot the 1.5 million most re
 }
 }
 \seealso{
-\code{\link[datasets:co2]{co2}}, \code{\link{download_co2_ml}}
+Users without internet connection can access the already imported data via \code{\link{co2_20ma}}.
+
+\code{\link{co2_ml}} for monthly data since 1958.
+
+\code{\link[datasets:co2]{co2}} in base \R.
 }
 \keyword{datasets}
 \keyword{internal}
