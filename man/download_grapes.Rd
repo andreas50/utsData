@@ -11,6 +11,8 @@ This function downloads a 650-year history of grape harvest dates in Western eur
 }
 \details{
 The data is available in Excel and raw text format on the NOAA website, but the latter has several formatting errors. Therefore, the data is imported from the Excel file using the \href{https://cran.r-project.org/web/packages/XLConnect/index.html}{XLConnect} package. Users who do not have this package installed or who want to save time, can access the already imported data using \code{data(grapes)}.
+
+Users without internet connection can access the already imported data using \code{data(grapes)}.
 }
 \examples{
 if (requireNamespace("XLConnect", quite=TRUE)) {
@@ -20,8 +22,9 @@ if (requireNamespace("XLConnect", quite=TRUE)) {
 
 #' # Save data
 \dontrun{
-  save(grapes, file=file.path("data", "lynx_1942.rda"), compress="xz")
+  save(grapes, file=file.path("data", "grapes.rda"), compress="xz")
 }
 }
 \keyword{datasets}
+\keyword{internal}
 

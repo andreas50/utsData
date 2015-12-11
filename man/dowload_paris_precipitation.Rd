@@ -9,12 +9,21 @@ dowload_paris_precipitation()
 \description{
 This function downloads the monthly precipitation (in mm) in Paris from 1688 to 2009 from a website by the \href{https://www.ncdc.noaa.gov/paleo/study/8761}{NOAA National Climatic Data Center}. The downloaded data is subsequently imported into \R and returned as a \code{\link{uts}} object.
 }
+\details{
+Users without internet connection can access the already imported data using \code{data(paris_precipitation)}.
+}
 \examples{
-rain <- dowload_paris_precipitation()
-plot(rain, max_dt=dyears(1), type="o", cex=0.5)
+paris_precipitation <- dowload_paris_precipitation()
+plot(paris_precipitation, max_dt=dyears(1), type="o", cex=0.5)
 
 # Most consecutive observations are one month apart
-table(round(diff(time(rain)) / 365 * 12))
+table(round(diff(time(paris_precipitation)) / 365 * 12))
+
+# Save data
+\dontrun{
+  save(paris_precipitation, file=file.path("data", "paris_precipitation.rda"), compress="xz")
+}
 }
 \keyword{datasets}
+\keyword{internal}
 

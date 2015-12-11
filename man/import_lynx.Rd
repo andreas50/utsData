@@ -29,4 +29,5 @@ The \code{\link[datasets:lynx]{lynx}} dataset in base \R is similar, except that
 }
 }
 \keyword{datasets}
+\keyword{internal}
 

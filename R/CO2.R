@@ -2,14 +2,17 @@
 #' 
 #' This function downloads the monthly average atmospheric CO2 concentration (in parts per million), as measured at the Mauna Loa observatory, from a website by the \href{http://www.esrl.noaa.gov/gmd/ccgg/trends/}{NOAA Earth System Research Laboratory}. The downloaded data is subsequently imported into \R and returned as a \code{\link{uts}} object. 
 #' 
+#' Users without internet connection can access the already imported data using \code{data(CO2)}.
+#' 
 #' @keywords datasets
 #' @seealso The \code{\link[datasets:co2]{co2}} dataset in base \R is very similar, but ends in 1997 and has several missing values filled in using linear interpolation.
 #' @examples
 #' CO2 <- download_CO2()
-#' plot(CO2)
 #' 
-#' # Most consecutive observations are one month apart
-#' table(diff(time(CO2)))
+#' # Save data
+#' \dontrun{
+#'   save(CO2, file=file.path("data", "CO2.rda"), compress="xz")
+#' }
 download_CO2 <- function()
 {
   # Download data into temporary file
@@ -39,3 +42,18 @@ download_CO2 <- function()
   CO2 <- uts(values, mid_month)
   na.omit(CO2)
 }
+
+
+#' Mauna Loa Atmospheric CO2 Concentration
+#'
+#' The monthly average atmospheric CO2 concentration (in parts per million), as measured at the Mauna Loa observatory. This dataset was imported into R by \code{\link{download_CO2}} from a website by the \href{http://www.esrl.noaa.gov/gmd/ccgg/trends/}{NOAA Earth System Research Laboratory}
+#'
+#' @seealso \code{\link{download_CO2}}
+#' @examples
+#' plot(CO2)
+#' plot(CO2, max_dt=ddays(45), type="o")
+#' 
+#' # Most consecutive observations are one month apart
+#' table(diff(time(CO2)))
+#' 
+"CO2"

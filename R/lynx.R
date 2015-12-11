@@ -10,6 +10,7 @@
 #' 
 #' @references Elton, C. and Nicholson, M. (1942). \href{http://www.jstor.org/stable/1358}{The Ten-Year Cycle in Numbers of the Lynx in Canada}. \emph{Journal of Animal Ecology}, Vol 11, No. 2, pp. 215-244
 #' 
+#' @keywords datasets internal
 #' @examples
 #' lynx_1942 <- import_lynx()
 #' plot(lynx_1942[["MacKenzie River"]])

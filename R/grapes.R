@@ -4,7 +4,9 @@
 #' 
 #' The data is available in Excel and raw text format on the NOAA website, but the latter has several formatting errors. Therefore, the data is imported from the Excel file using the \href{https://cran.r-project.org/web/packages/XLConnect/index.html}{XLConnect} package. Users who do not have this package installed or who want to save time, can access the already imported data using \code{data(grapes)}.
 #' 
-#' @keywords datasets
+#' Users without internet connection can access the already imported data using \code{data(grapes)}.
+#' 
+#' @keywords datasets internal
 #' @examples
 #' if (requireNamespace("XLConnect", quite=TRUE)) {
 #'   grapes <- download_grapes()
@@ -13,7 +15,7 @@
 #' 
 #' #' # Save data
 #' \dontrun{
-#'   save(grapes, file=file.path("data", "lynx_1942.rda"), compress="xz")
+#'   save(grapes, file=file.path("data", "grapes.rda"), compress="xz")
 #' }
 download_grapes <- function()
 {
