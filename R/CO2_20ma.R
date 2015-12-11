@@ -2,21 +2,21 @@
 #' 
 #' This function downloads a 20 million year (ma) reconstruction of the atmposheric CO2 concentration (in parts per million) from a website by the \href{https://www.ncdc.noaa.gov/paleo/study/10423}{NOAA Earth System Research Laboratory}. The downloaded data is subsequently imported into \R and returned as a \code{\link{uts}} object. 
 #' 
-#' Users without internet connection can access the already imported data using \code{data(CO2_20ma)}.
+#' Users without internet connection can access the already imported data using \code{data(co2_20ma)}.
 #' 
-#' @seealso \code{\link[datasets:co2]{co2}}, \code{\link{download_CO2}} 
+#' @seealso \code{\link[datasets:co2]{co2}}, \code{\link{download_co2_ml}} 
 #'
 #' @keywords datasets internal
 #' @examples 
-#' CO2_20ma <- download_CO2_20ma()
-#' plot(CO2_20ma, max_dt=dyears(1e6), type="o")      # connect observations less than 1 ma apart
-#' plot(tail_t(CO2_20ma, dyears(1.5e6)),  type="o")  # plot the 1.5 million most recent years
+#' co2_20ma <- download_co2_20ma()
+#' plot(co2_20ma, max_dt=dyears(1e6), type="o")      # connect observations less than 1 ma apart
+#' plot(tail_t(co2_20ma, dyears(1.5e6)),  type="o")  # plot the 1.5 million most recent years
 #' 
 #' # Save data
 #' \dontrun{
-#'   save(CO2_20ma, file=file.path("data", "CO2_20ma.rda"), compress="xz")
+#'   save(co2_20ma, file=file.path("data", "co2_20ma.rda"), compress="xz")
 #' }
-download_CO2_20ma <- function()
+download_co2_20ma <- function()
 {
   # Download data into temporary file
   file <- "http://www1.ncdc.noaa.gov/pub/data/paleo/contributions_by_author/tripati2009/tripati2009.txt"
