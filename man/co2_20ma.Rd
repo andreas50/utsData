@@ -5,7 +5,9 @@
 \title{20 Million Year Atmospheric CO2 Reconstruction}
 \format{A \code{\link[uts:uts]{uts}} object.}
 \source{
-This dataset was imported by \code{\link{download_co2_20ma}} from a website by the \href{https://www.ncdc.noaa.gov/paleo/study/10423}{NOAA Earth System Research Laboratory}.
+This dataset was imported by \code{\link{download_co2_20ma}} in December 2015 from a website by the \href{https://www.ncdc.noaa.gov/paleo/study/10423}{NOAA Earth System Research Laboratory}.
+
+Tripati, A.K., C.D. Roberts, and R.A. Eagle. 2009. Coupling of CO2 and Ice Sheet Stability Over Major Climate Transitions of the Last 20 Million Years. Science, Vol. 326, pp. 1394-1397, 4 December 2009. DOI: 10.1126/science.1178296
 }
 \description{
 A 20 million year (ma) reconstruction of the atmposheric CO2 concentration (in parts per million).
@@ -16,8 +18,6 @@ plot(co2_20ma, max_dt=dyears(1e6), type="o")      # connect observations less th
 plot(tail_t(co2_20ma, dyears(1.5e6)),  type="o")  # plot the 1.5 million most recent years
 }
 \seealso{
-\code{\link{download_co2_20ma}}
-
 \code{\link{co2_ml}} for monthly data since 1958.
 
 \code{\link[datasets:co2]{co2}} in base \R.
