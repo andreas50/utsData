@@ -18,11 +18,10 @@ Users without internet connection can access the already imported data using \co
 if (requireNamespace("XLConnect", quite=TRUE)) {
   grapes <- download_grapes()
   plot(grapes)
-}
 
-#' # Save data
-\dontrun{
-  save(grapes, file=file.path("data", "grapes.rda"), compress="xz")
+  \dontrun{
+    save(grapes, file=file.path("data", "grapes.rda"), compress="xz")
+  }
 }
 }
 \keyword{datasets}

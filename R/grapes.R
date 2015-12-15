@@ -11,11 +11,10 @@
 #' if (requireNamespace("XLConnect", quite=TRUE)) {
 #'   grapes <- download_grapes()
 #'   plot(grapes)
-#' }
-#' 
-#' #' # Save data
-#' \dontrun{
-#'   save(grapes, file=file.path("data", "grapes.rda"), compress="xz")
+#'   
+#'   \dontrun{
+#'     save(grapes, file=file.path("data", "grapes.rda"), compress="xz")
+#'   }
 #' }
 download_grapes <- function()
 {
@@ -42,5 +41,9 @@ download_grapes <- function()
   # Convert to "uts_vector"
   times <- ISOdate(data[, "year"], month=8, day=31, hour=0, tz="cet")
   out <- uts_vector_wide(data[, -1], times)
-  na.omit(out)
+  out <- na.omit(out)
+  
+  # Remove non-ASCII characters
+  names(out)[grepl("Poitou Charente", names(out))] <- "Vendee - Poitou Charente"
+  out
 }
