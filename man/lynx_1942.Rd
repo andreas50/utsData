@@ -15,8 +15,6 @@ data(lynx_1942)
 plot(lynx_1942[["MacKenzie River"]])
 }
 \seealso{
-\code{\link{import_lynx_1942}}
-
 The \code{\link[datasets:lynx]{lynx}} dataset in base \R is similar, except that it (i) contains data for only a single geographic region (instead of all eleven regions), (ii) has an obvious typo (compared to its quoted source).
 }
 \keyword{datasets}
