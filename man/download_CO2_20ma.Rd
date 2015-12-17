@@ -7,7 +7,7 @@
 download_co2_20ma()
 }
 \description{
-This function generates the \code{\link{co2_20ma}} dataset by downloading the data from a website by the \href{https://www.ncdc.noaa.gov/paleo/study/10423}{NOAA Earth System Research Laboratory} and returning it as a \code{\link[uts:uts]{uts}} object. It is not meant to be called directly, but provided for reproducability.
+This function creates the \code{\link{co2_20ma}} dataset by downloading the data from a website by the \href{https://www.ncdc.noaa.gov/paleo/study/10423}{NOAA Earth System Research Laboratory} and returning it as a \code{\link[uts:uts]{uts}} object. It is not meant to be called directly, but provided for reproducability.
 }
 \examples{
 co2_20ma <- download_co2_20ma()

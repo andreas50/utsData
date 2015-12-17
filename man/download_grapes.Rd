@@ -7,17 +7,14 @@
 download_grapes()
 }
 \description{
-This function downloads a 650-year history of grape harvest dates in Western europe from a website by the \href{https://www.ncdc.noaa.gov/cdo/f?p=519:1:0::::P1_STUDY_ID:13194}{NOAA National Climatic Data Center}. The downloaded data is subsequently imported into \R and returned as a \code{\link{uts_vector}} object.
+This function creates the \code{\link{grapes}} dataset by downloading the data from a website by the \href{https://www.ncdc.noaa.gov/cdo/f?p=519:1:0::::P1_STUDY_ID:13194}{NOAA National Climatic Data Center} and returning it as a \code{\link[utsMultivariate:uts_vector]{uts_vector}} object. It is not meant to be called directly, but provided for reproducability.
 }
 \details{
-The data is available in Excel and raw text format on the NOAA website, but the latter has several formatting errors. Therefore, the data is imported from the Excel file using the \href{https://cran.r-project.org/web/packages/XLConnect/index.html}{XLConnect} package. Users who do not have this package installed or who want to save time, can access the already imported data using \code{data(grapes)}.
-
-Users without internet connection can access the already imported data using \code{data(grapes)}.
+The raw data is available in Excel and raw text, but the latter has several formatting errors. Therefore, the data is imported from the Excel file using the \href{https://cran.r-project.org/web/packages/XLConnect/index.html}{XLConnect} package.
 }
 \examples{
-if (requireNamespace("XLConnect", quite=TRUE)) {
+if (requireNamespace("XLConnect", quietly=TRUE)) {
   grapes <- download_grapes()
-  plot(grapes)
 
   \dontrun{
     save(grapes, file=file.path("data", "grapes.rda"), compress="xz")

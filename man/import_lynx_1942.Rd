@@ -7,7 +7,7 @@
 import_lynx_1942()
 }
 \description{
-This function generates the \code{\link{lynx_1942}} data by importing the observations from a local CSV file and returning them as as \code{\link{uts_vector}} object. It is not meant to be called directly, but provided for reproducability.
+This function crates the \code{\link{lynx_1942}} data by importing the observations from a local CSV file and returning them as as \code{\link{uts_vector}} object. It is not meant to be called directly, but provided for reproducability.
 }
 \examples{
 # Show the raw data

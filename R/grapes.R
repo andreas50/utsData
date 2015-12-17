@@ -1,16 +1,13 @@
 #' Grape Harvest Dates
 #' 
-#' This function downloads a 650-year history of grape harvest dates in Western europe from a website by the \href{https://www.ncdc.noaa.gov/cdo/f?p=519:1:0::::P1_STUDY_ID:13194}{NOAA National Climatic Data Center}. The downloaded data is subsequently imported into \R and returned as a \code{\link{uts_vector}} object.
+#' This function creates the \code{\link{grapes}} dataset by downloading the data from a website by the \href{https://www.ncdc.noaa.gov/cdo/f?p=519:1:0::::P1_STUDY_ID:13194}{NOAA National Climatic Data Center} and returning it as a \code{\link[utsMultivariate:uts_vector]{uts_vector}} object. It is not meant to be called directly, but provided for reproducability.
 #' 
-#' The data is available in Excel and raw text format on the NOAA website, but the latter has several formatting errors. Therefore, the data is imported from the Excel file using the \href{https://cran.r-project.org/web/packages/XLConnect/index.html}{XLConnect} package. Users who do not have this package installed or who want to save time, can access the already imported data using \code{data(grapes)}.
-#' 
-#' Users without internet connection can access the already imported data using \code{data(grapes)}.
+#' The raw data is available in Excel and raw text, but the latter has several formatting errors. Therefore, the data is imported from the Excel file using the \href{https://cran.r-project.org/web/packages/XLConnect/index.html}{XLConnect} package.
 #' 
 #' @keywords datasets internal
 #' @examples
-#' if (requireNamespace("XLConnect", quite=TRUE)) {
+#' if (requireNamespace("XLConnect", quietly=TRUE)) {
 #'   grapes <- download_grapes()
-#'   plot(grapes)
 #'   
 #'   \dontrun{
 #'     save(grapes, file=file.path("data", "grapes.rda"), compress="xz")
@@ -47,3 +44,29 @@ download_grapes <- function()
   names(out)[grepl("Poitou Charente", names(out))] <- "Vendee - Poitou Charente"
   out
 }
+
+
+#' Grape Harvest Dates
+#' 
+#' A 650-year history of grape harvest dates for 27 regions in Western Europe.
+#'
+#' @format A \code{\link[utsMultivariate:uts_vector]{uts_vector}} object. Harvest dates are presented as the number of days after 31 August.
+#'
+#' @source This dataset was imported by \code{\link{download_grapes}} in December 2015 from a website by the \href{https://www.ncdc.noaa.gov/cdo/f?p=519:1:0::::P1_STUDY_ID:13194}{NOAA National Climatic Data Center}.
+#' 
+#' @source Daux, V., I. Garcia de Cortazar-Atauri, P. Yiou, I. Chuine, E. Garnier, E. Le Roy Ladurie, O. Mestre, and J. Tardaguila. 2011. An open-database of Grape Harvest dates for climate research: data description and quality assessment. Climate of the Past, Vol. 8, pp. 1403-1418, 2012 www.clim-past.net/8/1403/2012/ doi:10.5194/cp-8-1403-2012
+#' 
+#' @name grapes
+#' @keywords datasets
+#' @examples
+#' data(grapes)
+#' plot(grapes$Burgundy)
+#' 
+#' # Connect observations less than two years apart by a line
+#' plot(grapes$Bordeaux, max_dt=dyears(2), type="o", cex=0.5)
+#' 
+#' # Plot 20-year two-sided rolling average of Burgundy harvest dates
+#' if (requireNamespace("utsOperators", quietly=TRUE)) {
+#'   plot(utsOperators::rolling_apply(grapes$Burgundy, width=dyears(20), FUN=mean, align="center"))
+#' }
+NULL
