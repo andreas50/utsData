@@ -1,4 +1,4 @@
-#' Mauna Loa Atmospheric CO2 Concentration (Up-To-Date)
+#' Mauna Loa Atmospheric CO2 Concentration (Latest Data)
 #' 
 #' This function downloads the monthly average atmospheric CO2 concentration (in parts per million), as measured at the \href{http://www.esrl.noaa.gov/gmd/obop/mlo/}{Mauna Loa observatory}, from a website by the \href{http://www.esrl.noaa.gov/gmd/ccgg/trends/}{NOAA Earth System Research Laboratory}. The downloaded data is subsequently imported into \R and returned as a \code{\link[uts:uts]{uts}} object. 
 #' 
@@ -47,13 +47,14 @@ download_co2_ml <- function()
 }
 
 
-#' Mauna Loa Atmospheric CO2 Concentration (Up-To-Date)
+#' Mauna Loa Atmospheric CO2 Concentration
 #'
 #' The monthly average atmospheric CO2 concentration (in parts per million), as measured at the \href{http://www.esrl.noaa.gov/gmd/obop/mlo/}{Mauna Loa observatory}.
 #'
 #' @format A \code{\link[uts:uts]{uts}} object.
 #'
-#' @source This dataset was imported by \code{\link{download_co2_ml}} from a website by the \href{http://www.esrl.noaa.gov/gmd/ccgg/trends/}{NOAA Earth System Research Laboratory}.
+#' @source This dataset was imported by \code{\link{download_co2_ml}} in December 2015 from a website by the \href{http://www.esrl.noaa.gov/gmd/ccgg/trends/}{NOAA Earth System Research Laboratory}.
+#' @source Dr. Pieter Tans, NOAA/ESRL (www.esrl.noaa.gov/gmd/ccgg/trends/) and Dr. Ralph Keeling, Scripps Institution of Oceanography (scrippsco2.ucsd.edu/).
 #'
 #' @seealso \code{\link{download_co2_ml}} gets the most recent data.
 #' @seealso \code{\link{co2_20ma}} for a 20 million year reconstruction.
@@ -64,6 +65,8 @@ download_co2_ml <- function()
 #' @examples
 #' data(co2_ml)
 #' plot(co2_ml)
-#' table(round(diff(co2_ml$times) * 12 / 365))  # most observations are one month apart
+#' 
+#' # Most consecutive observations are one month apart
+#' table(round(diff(co2_ml$times) * 12 / 365))
 NULL
 

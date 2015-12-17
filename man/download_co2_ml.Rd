@@ -2,7 +2,7 @@
 % Please edit documentation in R/co2_ml.R
 \name{download_co2_ml}
 \alias{download_co2_ml}
-\title{Mauna Loa Atmospheric CO2 Concentration (Up-To-Date)}
+\title{Mauna Loa Atmospheric CO2 Concentration (Latest Data)}
 \usage{
 download_co2_ml()
 }
