@@ -2,7 +2,7 @@
 % Please edit documentation in R/lynx.R
 \name{import_lynx_1942}
 \alias{import_lynx_1942}
-\title{Annual Canadian Lynx trappings 1821-1939}
+\title{Annual Canadian Lynx Trappings 1821-1939}
 \usage{
 import_lynx_1942()
 }

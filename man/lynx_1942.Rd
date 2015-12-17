@@ -2,7 +2,7 @@
 % Please edit documentation in R/lynx.R
 \name{lynx_1942}
 \alias{lynx_1942}
-\title{Annual Canadian Lynx trappings 1821-1939}
+\title{Annual Canadian Lynx Trappings 1821-1939}
 \format{A \code{\link[utsMultivariate:uts_vector]{uts_vector}} object. An observation for date, let's say, 1840-05-31 represents the total number of lynx catches for outfit 1839, which ran from 1 June 1839 to 31 May 1840.}
 \source{
 Elton, C. and Nicholson, M. (1942). \href{http://www.jstor.org/stable/1358}{The Ten-Year Cycle in Numbers of the Lynx in Canada}. \emph{Journal of Animal Ecology}, Vol 11, No. 2, pp. 215-244.
@@ -12,7 +12,8 @@ The annual number of Canadian lynx (\emph{Lynx canadensis}) catches by the Hudso
 }
 \examples{
 data(lynx_1942)
-plot(lynx_1942[["MacKenzie River"]])
+plot(lynx_1942[["MacKenzie River"]], log="y", type="o")
+abline(v=date_decimal(seq(1820, 1930, by=10)), col="grey")
 }
 \seealso{
 The \code{\link[datasets:lynx]{lynx}} dataset in base \R is similar, except that it (i) contains data for only a single geographic region (instead of all eleven regions), (ii) has an obvious typo (compared to its quoted source).

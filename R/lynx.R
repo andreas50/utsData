@@ -1,4 +1,4 @@
-#' Annual Canadian Lynx trappings 1821-1939
+#' Annual Canadian Lynx Trappings 1821-1939
 #' 
 #' This function crates the \code{\link{lynx_1942}} data by importing the observations from a local CSV file and returning them as as \code{\link{uts_vector}} object. It is not meant to be called directly, but provided for reproducability.
 #' 
@@ -25,7 +25,7 @@ import_lynx_1942 <- function()
 }
 
 
-#' Annual Canadian Lynx trappings 1821-1939
+#' Annual Canadian Lynx Trappings 1821-1939
 #'
 #' The annual number of Canadian lynx (\emph{Lynx canadensis}) catches by the Hudson's Bay Company. Each recorded year (called \emph{Outfit}) counts collected furs from 1 June of that year until 31 May of the following year.
 #'
@@ -39,5 +39,6 @@ import_lynx_1942 <- function()
 #' @keywords datasets
 #' @examples
 #' data(lynx_1942)
-#' plot(lynx_1942[["MacKenzie River"]])
+#' plot(lynx_1942[["MacKenzie River"]], log="y", type="o")
+#' abline(v=date_decimal(seq(1820, 1930, by=10)), col="grey")
 NULL
