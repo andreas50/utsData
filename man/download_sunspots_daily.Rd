@@ -10,10 +10,9 @@ download_sunspots_daily()
 Download the daily number of sunspots since 1818 from \url{http://www.sidc.be/silso/datafiles}. The data is subsequently imported into \R and returned as a \code{\link[utsMultivariate:uts_vector]{uts_vector}} object.
 }
 \examples{
-sunspots_daily <- download_sunspots_daily()
-
-# Save the data
 \dontrun{
+  # Download and save the data
+  sunspots_daily <- download_sunspots_daily()
   save(sunspots_daily, file=file.path("data", "sunspots_daily.rda"), compress="xz")
 }
 }

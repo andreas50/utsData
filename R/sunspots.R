@@ -5,10 +5,9 @@
 #' @seealso Users without internet connection can access the already imported data via \code{\link{sunspots_daily}}. However, to get the most recent data it is recommended to use this function.
 #' 
 #' @examples
-#' sunspots_daily <- download_sunspots_daily()
-#' 
-#' # Save the data
 #' \dontrun{
+#'   # Download and save the data
+#'   sunspots_daily <- download_sunspots_daily()
 #'   save(sunspots_daily, file=file.path("data", "sunspots_daily.rda"), compress="xz")
 #' }
 download_sunspots_daily <- function()
