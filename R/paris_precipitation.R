@@ -43,7 +43,7 @@ download_paris_precipitation <- function()
 #'
 #' @format A \code{\link[uts:uts]{uts}} object.
 #'
-#' @source This dataset was imported by \code{\link{download_paris_precipitation}} in December 2015 from a website by the \href{https://www.ncdc.noaa.gov/paleo/study/8761}{NOAA National Climatic Data Center}.
+#' @source This dataset was imported by \code{\link{download_paris_precipitation}} in January 2016 from a website by the \href{https://www.ncdc.noaa.gov/paleo/study/8761}{NOAA National Climatic Data Center}.
 #' @source Slonosky, V.C. 2002. Wet winters, dry summers? Three centuries of precipitation data from Paris Geophys. Res. Lett., Vol. 29(19), 1895
 #' 
 #' @name paris_precipitation

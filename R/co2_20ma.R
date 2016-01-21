@@ -51,7 +51,7 @@ download_co2_20ma <- function()
 #'
 #' @format A \code{\link[uts:uts]{uts}} object.
 #'
-#' @source This dataset was imported by \code{\link{download_co2_20ma}} in December 2015 from a website by the \href{https://www.ncdc.noaa.gov/paleo/study/10423}{NOAA Earth System Research Laboratory}.
+#' @source This dataset was imported by \code{\link{download_co2_20ma}} in January 2016 from a website by the \href{https://www.ncdc.noaa.gov/paleo/study/10423}{NOAA Earth System Research Laboratory}.
 #' @source Tripati, A.K., C.D. Roberts, and R.A. Eagle. 2009. Coupling of CO2 and Ice Sheet Stability Over Major Climate Transitions of the Last 20 Million Years. Science, Vol. 326, pp. 1394-1397, 4 December 2009. DOI: 10.1126/science.1178296
 #'
 #' @seealso \code{\link{co2_ml}} for monthly data since 1958.
