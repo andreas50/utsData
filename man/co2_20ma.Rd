@@ -3,7 +3,7 @@
 \name{co2_20ma}
 \alias{co2_20ma}
 \title{20 Million Year Atmospheric CO2 Reconstruction}
-\format{A \code{\link[uts:uts]{uts}} object.}
+\format{A \code{\link[uts]{uts}} object.}
 \source{
 This dataset was imported by \code{\link{download_co2_20ma}} in January 2016 from a website by the \href{https://www.ncdc.noaa.gov/paleo/study/10423}{NOAA Earth System Research Laboratory}.
 
@@ -20,7 +20,7 @@ plot(tail_t(co2_20ma, dyears(1.5e6)),  type="o")  # plot the 1.5 million most re
 \seealso{
 \code{\link{co2_ml}} for monthly data since 1958.
 
-\code{\link[datasets:co2]{co2}} in base \R.
+\code{\link{co2}} in base \R.
 }
 \keyword{datasets}
 

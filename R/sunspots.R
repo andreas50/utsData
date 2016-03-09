@@ -1,6 +1,6 @@
 #' Daily Sunspot Numbers (Latest Data)
 #' 
-#' Download the daily number of sunspots since 1818 from \url{http://www.sidc.be/silso/datafiles}. The data is subsequently imported into \R and returned as a \code{\link[utsMultivariate:uts_vector]{uts_vector}} object. 
+#' Download the daily number of sunspots since 1818 from \url{http://www.sidc.be/silso/datafiles}. The data is subsequently imported into \R and returned as a \code{\link[utsMultivariate]{uts_vector}} object. 
 #' 
 #' @seealso Users without internet connection can access the already imported data via \code{\link{sunspots_daily}}. However, to get the most recent data it is recommended to use this function.
 #' 
@@ -44,14 +44,14 @@ download_sunspots_daily <- function()
 #' 
 #' The daily number of sunspots since 1818.
 #'
-#' @format A \code{\link[utsMultivariate:uts_vector]{uts_vector}} object. The first time series contains the estimated daily total number of sunspots. The second time series is the estimated standard deviation of the raw numbers provided by all measurement stations. The third time series contains the number of observations used to compute the daily estimate. 
+#' @format A \code{\link[utsMultivariate]{uts_vector}} object. The first time series contains the estimated daily total number of sunspots. The second time series is the estimated standard deviation of the raw numbers provided by all measurement stations. The third time series contains the number of observations used to compute the daily estimate. 
 #'
 #' @source This dataset was imported by \code{\link{download_sunspots_daily}} in January 2016 from \url{http://www.sidc.be/silso/datafiles}. For a detailed description see \url{http://www.sidc.be/silso/infosndtot}.
 #' @source WDC-SILSO, Royal Observatory of Belgium, Brussels
 #' 
 #' @seealso \code{\link{download_sunspots_daily}} gets the most recent data.
-#' @seealso For \emph{monthly} sunspot numbers, see \code{\link[datasets:sunspot.month]{sunspot.month}} and \code{\link[datasets:sunspots]{sunspots}} in base \R.
-#' @seealso For \emph{yearly} sunspot numbers, see \code{\link[datasets:sunspot.year]{sunspot.year}} in base \R.
+#' @seealso For \emph{monthly} sunspot numbers, see \code{\link{sunspot.month}} and \code{\link{sunspots}} in base \R.
+#' @seealso For \emph{yearly} sunspot numbers, see \code{\link{sunspot.year}} in base \R.
 #' 
 #' @name sunspots_daily
 #' @keywords datasets

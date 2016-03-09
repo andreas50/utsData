@@ -3,7 +3,7 @@
 \name{grapes}
 \alias{grapes}
 \title{Grape Harvest Dates}
-\format{A \code{\link[utsMultivariate:uts_vector]{uts_vector}} object. Harvest dates are presented as the number of days after 31 August.}
+\format{A \code{\link[utsMultivariate]{uts_vector}} object. Harvest dates are presented as the number of days after 31 August.}
 \source{
 This dataset was imported by \code{\link{download_grapes}} in January 2016 from a website by the \href{https://www.ncdc.noaa.gov/cdo/f?p=519:1:0::::P1_STUDY_ID:13194}{NOAA National Climatic Data Center}.
 

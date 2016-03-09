@@ -7,7 +7,7 @@
 download_paris_precipitation()
 }
 \description{
-This function creates the \code{\link{paris_precipitation}} dataset by downloading the data from a website by the \href{https://www.ncdc.noaa.gov/paleo/study/8761}{NOAA National Climatic Data Center} and returning it as a \code{\link[uts:uts]{uts}} object. It is not meant to be called directly, but provided for reproducability.
+This function creates the \code{\link{paris_precipitation}} dataset by downloading the data from a website by the \href{https://www.ncdc.noaa.gov/paleo/study/8761}{NOAA National Climatic Data Center} and returning it as a \code{\link[uts]{uts}} object. It is not meant to be called directly, but provided for reproducability.
 }
 \examples{
 paris_precipitation <- download_paris_precipitation()

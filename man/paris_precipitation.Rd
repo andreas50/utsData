@@ -3,7 +3,7 @@
 \name{paris_precipitation}
 \alias{paris_precipitation}
 \title{Paris Monthly Precipitation 1688-2009}
-\format{A \code{\link[uts:uts]{uts}} object.}
+\format{A \code{\link[uts]{uts}} object.}
 \source{
 This dataset was imported by \code{\link{download_paris_precipitation}} in January 2016 from a website by the \href{https://www.ncdc.noaa.gov/paleo/study/8761}{NOAA National Climatic Data Center}.
 

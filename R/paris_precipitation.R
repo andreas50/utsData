@@ -1,6 +1,6 @@
 #' Paris Monthly Precipitation 1688-2009
 #' 
-#' This function creates the \code{\link{paris_precipitation}} dataset by downloading the data from a website by the \href{https://www.ncdc.noaa.gov/paleo/study/8761}{NOAA National Climatic Data Center} and returning it as a \code{\link[uts:uts]{uts}} object. It is not meant to be called directly, but provided for reproducability.
+#' This function creates the \code{\link{paris_precipitation}} dataset by downloading the data from a website by the \href{https://www.ncdc.noaa.gov/paleo/study/8761}{NOAA National Climatic Data Center} and returning it as a \code{\link[uts]{uts}} object. It is not meant to be called directly, but provided for reproducability.
 #' 
 #' @keywords datasets internal
 #' @examples
@@ -41,7 +41,7 @@ download_paris_precipitation <- function()
 #' 
 #' The monthly precipitation (in mm) in Paris from 1688 to 2009.
 #'
-#' @format A \code{\link[uts:uts]{uts}} object.
+#' @format A \code{\link[uts]{uts}} object.
 #'
 #' @source This dataset was imported by \code{\link{download_paris_precipitation}} in January 2016 from a website by the \href{https://www.ncdc.noaa.gov/paleo/study/8761}{NOAA National Climatic Data Center}.
 #' @source Slonosky, V.C. 2002. Wet winters, dry summers? Three centuries of precipitation data from Paris Geophys. Res. Lett., Vol. 29(19), 1895

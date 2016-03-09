@@ -3,7 +3,7 @@
 \name{co2_ml}
 \alias{co2_ml}
 \title{Mauna Loa Atmospheric CO2 Concentration}
-\format{A \code{\link[uts:uts]{uts}} object.}
+\format{A \code{\link[uts]{uts}} object.}
 \source{
 This dataset was imported by \code{\link{download_co2_ml}} in January 2016 from a website by the \href{http://www.esrl.noaa.gov/gmd/ccgg/trends/}{NOAA Earth System Research Laboratory}.
 
@@ -24,7 +24,7 @@ table(round(diff(co2_ml$times) * 12 / 365))
 
 \code{\link{co2_20ma}} for a 20 million year reconstruction.
 
-The \code{\link[datasets:co2]{co2}} dataset in base \R is very similar, but ends in 1997 and has several missing values filled in using linear interpolation.
+The \code{\link{co2}} dataset in base \R is very similar, but ends in 1997 and has several missing values filled in using linear interpolation.
 }
 \keyword{datasets}
 

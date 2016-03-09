@@ -7,7 +7,7 @@
 download_sunspots_daily()
 }
 \description{
-Download the daily number of sunspots since 1818 from \url{http://www.sidc.be/silso/datafiles}. The data is subsequently imported into \R and returned as a \code{\link[utsMultivariate:uts_vector]{uts_vector}} object.
+Download the daily number of sunspots since 1818 from \url{http://www.sidc.be/silso/datafiles}. The data is subsequently imported into \R and returned as a \code{\link[utsMultivariate]{uts_vector}} object.
 }
 \examples{
 \dontrun{

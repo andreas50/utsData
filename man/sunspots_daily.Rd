@@ -3,7 +3,7 @@
 \name{sunspots_daily}
 \alias{sunspots_daily}
 \title{Daily Sunspot Numbers}
-\format{A \code{\link[utsMultivariate:uts_vector]{uts_vector}} object. The first time series contains the estimated daily total number of sunspots. The second time series is the estimated standard deviation of the raw numbers provided by all measurement stations. The third time series contains the number of observations used to compute the daily estimate.}
+\format{A \code{\link[utsMultivariate]{uts_vector}} object. The first time series contains the estimated daily total number of sunspots. The second time series is the estimated standard deviation of the raw numbers provided by all measurement stations. The third time series contains the number of observations used to compute the daily estimate.}
 \source{
 This dataset was imported by \code{\link{download_sunspots_daily}} in January 2016 from \url{http://www.sidc.be/silso/datafiles}. For a detailed description see \url{http://www.sidc.be/silso/infosndtot}.
 
@@ -24,9 +24,9 @@ table(round(difftime(times[-1], times[-length(times)], unit="day")))
 \seealso{
 \code{\link{download_sunspots_daily}} gets the most recent data.
 
-For \emph{monthly} sunspot numbers, see \code{\link[datasets:sunspot.month]{sunspot.month}} and \code{\link[datasets:sunspots]{sunspots}} in base \R.
+For \emph{monthly} sunspot numbers, see \code{\link{sunspot.month}} and \code{\link{sunspots}} in base \R.
 
-For \emph{yearly} sunspot numbers, see \code{\link[datasets:sunspot.year]{sunspot.year}} in base \R.
+For \emph{yearly} sunspot numbers, see \code{\link{sunspot.year}} in base \R.
 }
 \keyword{datasets}
 

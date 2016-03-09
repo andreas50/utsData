@@ -1,10 +1,10 @@
 #' Mauna Loa Atmospheric CO2 Concentration (Latest Data)
 #' 
-#' This function downloads the monthly average atmospheric CO2 concentration (in parts per million), as measured at the \href{http://www.esrl.noaa.gov/gmd/obop/mlo/}{Mauna Loa observatory}, from a website by the \href{http://www.esrl.noaa.gov/gmd/ccgg/trends/}{NOAA Earth System Research Laboratory}. The downloaded data is subsequently imported into \R and returned as a \code{\link[uts:uts]{uts}} object. 
+#' This function downloads the monthly average atmospheric CO2 concentration (in parts per million), as measured at the \href{http://www.esrl.noaa.gov/gmd/obop/mlo/}{Mauna Loa observatory}, from a website by the \href{http://www.esrl.noaa.gov/gmd/ccgg/trends/}{NOAA Earth System Research Laboratory}. The downloaded data is subsequently imported into \R and returned as a \code{\link[uts]{uts}} object. 
 #' 
 #' @seealso Users without internet connection can access the already imported data via \code{\link{co2_ml}}. However, to get the most recent data it is recommended to use this function.
 #' @seealso \code{\link{co2_20ma}} for a 20 million year reconstruction.
-#' @seealso The \code{\link[datasets:co2]{co2}} dataset in base \R is very similar, but ends in 1997 and has several missing values filled in using linear interpolation.
+#' @seealso The \code{\link{co2}} dataset in base \R is very similar, but ends in 1997 and has several missing values filled in using linear interpolation.
 #' 
 #' @keywords datasets
 #' @examples
@@ -51,14 +51,14 @@ download_co2_ml <- function()
 #'
 #' The monthly average atmospheric CO2 concentration (in parts per million), as measured at the \href{http://www.esrl.noaa.gov/gmd/obop/mlo/}{Mauna Loa observatory}.
 #'
-#' @format A \code{\link[uts:uts]{uts}} object.
+#' @format A \code{\link[uts]{uts}} object.
 #'
 #' @source This dataset was imported by \code{\link{download_co2_ml}} in January 2016 from a website by the \href{http://www.esrl.noaa.gov/gmd/ccgg/trends/}{NOAA Earth System Research Laboratory}.
 #' @source Dr. Pieter Tans, NOAA/ESRL (www.esrl.noaa.gov/gmd/ccgg/trends/) and Dr. Ralph Keeling, Scripps Institution of Oceanography (scrippsco2.ucsd.edu/).
 #'
 #' @seealso \code{\link{download_co2_ml}} gets the most recent data.
 #' @seealso \code{\link{co2_20ma}} for a 20 million year reconstruction.
-#' @seealso The \code{\link[datasets:co2]{co2}} dataset in base \R is very similar, but ends in 1997 and has several missing values filled in using linear interpolation.
+#' @seealso The \code{\link{co2}} dataset in base \R is very similar, but ends in 1997 and has several missing values filled in using linear interpolation.
 #' 
 #' @name co2_ml
 #' @keywords datasets
