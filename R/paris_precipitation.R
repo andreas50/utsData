@@ -14,8 +14,8 @@ download_paris_precipitation <- function()
 {
   # Download data into temporary file
   file <- "http://www1.ncdc.noaa.gov/pub/data/paleo/historical/europe/france/paris-precip-slonosky2002.txt"
-  cat(paste0("Downloading the Paris precipitation data from ", file, "\n"))
-  cat("Please see www.ncdc.noaa.gov/paleo/study/8761 for a detailed description.\n")
+  message("Downloading the Paris precipitation data from ", file)
+  message("Please see www.ncdc.noaa.gov/paleo/study/8761 for a detailed description.")
   tmp_file <- tempfile()
   on.exit(unlink(tmp_file))
   download.file(file, destfile=tmp_file, quiet=TRUE)

@@ -20,8 +20,8 @@ download_grapes <- function()
   
   # Download data into temporary file
   file <- "http://www1.ncdc.noaa.gov/pub/data/paleo/historical/europe/europe2012ghd.xls"
-  cat(paste0("Downloading the Western Europe 650 Year Grape Harvest Date Database from ", file, "\n"))
-  cat("Please see https://www.ncdc.noaa.gov/paleo/study/13194 for a detailed description.\n")
+  message("Downloading the Western Europe 650 Year Grape Harvest Date Database from ", file)
+  message("Please see https://www.ncdc.noaa.gov/paleo/study/13194 for a detailed description.")
   tmp_file <- tempfile()
   on.exit(unlink(tmp_file))
   download.file(file, destfile=tmp_file, mode="wb", quiet=TRUE)

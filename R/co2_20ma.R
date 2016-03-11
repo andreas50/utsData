@@ -14,8 +14,8 @@ download_co2_20ma <- function()
 {
   # Download data into temporary file
   file <- "http://www1.ncdc.noaa.gov/pub/data/paleo/contributions_by_author/tripati2009/tripati2009.txt"
-  cat(paste0("Downloading the Atmospheric CO2 20 Million Year Reconstruction data from ", file, "\n"))
-  cat("Please see www.ncdc.noaa.gov/paleo/study/10423 for a detailed description.\n")
+  message("Downloading the Atmospheric CO2 20 Million Year Reconstruction data from ", file)
+  message("Please see www.ncdc.noaa.gov/paleo/study/10423 for a detailed description.")
   tmp_file <- tempfile()
   on.exit(unlink(tmp_file))
   download.file(file, destfile=tmp_file, quiet=TRUE)

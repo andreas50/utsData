@@ -14,8 +14,8 @@ download_sunspots_daily <- function()
 {
   # Download data
   file <- "http://www.sidc.be/silso/DATA/SN_d_tot_V2.0.txt"
-  cat(paste0("Downloading the daily sunspots data from ", file, "\n"))
-  cat("Please see www.sidc.be/silso/datafiles for a detailed description.\n")
+  message("Downloading the daily sunspots data from ", file)
+  message("Please see www.sidc.be/silso/datafiles for a detailed description.")
   tmp_file <- tempfile()
   on.exit(unlink(tmp_file))
   download.file(file, destfile=tmp_file, quiet=TRUE)

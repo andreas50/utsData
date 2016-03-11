@@ -20,8 +20,8 @@ download_co2_ml <- function()
 {
   # Download data into temporary file
   file <- "ftp://aftp.cmdl.noaa.gov/products/trends/co2/co2_mm_mlo.txt"
-  cat(paste0("Downloading the Mauna Loa CO2 data from ", file, "\n"))
-  cat("Please see www.esrl.noaa.gov/gmd/ccgg/trends/ for a detailed description.\n")
+  message("Downloading the Mauna Loa CO2 data from ", file)
+  message("Please see www.esrl.noaa.gov/gmd/ccgg/trends/ for a detailed description.")
   tmp_file <- tempfile()
   on.exit(unlink(tmp_file))
   download.file(file, destfile=tmp_file, quiet=TRUE)
