@@ -53,7 +53,7 @@ download_co2_ml <- function()
 #'
 #' @format A \code{\link[uts]{uts}} object.
 #'
-#' @source This dataset was imported by \code{\link{download_co2_ml}} in January 2016 from a website by the \href{http://www.esrl.noaa.gov/gmd/ccgg/trends/}{NOAA Earth System Research Laboratory}.
+#' @source This dataset was imported by \code{\link{download_co2_ml}} in March 2017 from a website by the \href{http://www.esrl.noaa.gov/gmd/ccgg/trends/}{NOAA Earth System Research Laboratory}.
 #' @source Dr. Pieter Tans, NOAA/ESRL (www.esrl.noaa.gov/gmd/ccgg/trends/) and Dr. Ralph Keeling, Scripps Institution of Oceanography (scrippsco2.ucsd.edu/).
 #'
 #' @seealso \code{\link{download_co2_ml}} gets the most recent data.

@@ -1,5 +1,7 @@
 # Imports from other packages
 import(lubridate)
+importFrom(stats, na.omit)
+importFrom(utils, download.file, read.csv)
 import(uts)
 import(utsMultivariate)
 
