@@ -2,7 +2,7 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 ### Introduction
 
-This package provides example datasets of multivariate unevenly spaced time series. The data can be loaded, viewed, plotted, and analyzed using the [uts](https://github.com/andreas50/uts), [utsMultivariate](https://github.com/andreas50/utsMultivariate), and utsTrendSeasonality (coming soon) packages.
+This package provides example datasets of multivariate unevenly spaced time series. The data can be loaded, viewed, plotted, and analyzed using the [uts](https://github.com/andreas50/uts), [utsMultivariate](https://github.com/andreas50/utsMultivariate), and utsTrendSeasonality (coming soon) `R` packages.
 
 ### Installation
 
@@ -40,7 +40,8 @@ table(round(diff(time(co2_ml)) / 365 * 12))
 ```
 
 ``` r
-# Grape harvest dates (relative to Augst 31st) for Bordeaux region
+# Grape harvest dates (relative to August 31st) for Bordeaux region
+# -) observations less than 2 years apart are connected by a line in the polot
 plot(grapes$Bordeaux, max_dt=dyears(2), type="o", cex=0.5)
 ```
 
