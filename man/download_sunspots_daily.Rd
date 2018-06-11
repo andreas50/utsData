@@ -19,4 +19,3 @@ Download the daily number of sunspots since 1818 from \url{http://www.sidc.be/si
 \seealso{
 Users without internet connection can access the already imported data via \code{\link{sunspots_daily}}. However, to get the most recent data it is recommended to use this function.
 }
-

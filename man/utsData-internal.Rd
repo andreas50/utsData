@@ -12,4 +12,3 @@ The following internal functions allow to reproduce the data download and import
   \item \code{\link{import_lynx_1942}}
 }
 }
-

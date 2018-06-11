@@ -23,4 +23,3 @@ if (requireNamespace("XLConnect", quietly=TRUE)) {
 }
 \keyword{datasets}
 \keyword{internal}
-

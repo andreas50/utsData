@@ -27,4 +27,3 @@ table(round(diff(co2_ml$times) * 12 / 365))
 The \code{\link{co2}} dataset in base \R is very similar, but ends in 1997 and has several missing values filled in using linear interpolation.
 }
 \keyword{datasets}
-

@@ -28,4 +28,3 @@ For \emph{monthly} sunspot numbers, see \code{\link{sunspot.month}} and \code{\l
 For \emph{yearly} sunspot numbers, see \code{\link{sunspot.year}} in base \R.
 }
 \keyword{datasets}
-

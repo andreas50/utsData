@@ -27,4 +27,3 @@ Users without internet connection can access the already imported data via \code
 The \code{\link{co2}} dataset in base \R is very similar, but ends in 1997 and has several missing values filled in using linear interpolation.
 }
 \keyword{datasets}
-

@@ -19,4 +19,3 @@ co2_20ma <- download_co2_20ma()
 }
 \keyword{datasets}
 \keyword{internal}
-

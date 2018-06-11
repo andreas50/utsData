@@ -23,4 +23,3 @@ plot(tail_t(co2_20ma, dyears(1.5e6)),  type="o")  # plot the 1.5 million most re
 \code{\link{co2}} in base \R.
 }
 \keyword{datasets}
-

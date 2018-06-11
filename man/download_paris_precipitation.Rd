@@ -19,4 +19,3 @@ paris_precipitation <- download_paris_precipitation()
 }
 \keyword{datasets}
 \keyword{internal}
-

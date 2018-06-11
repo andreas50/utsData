@@ -19,4 +19,3 @@ abline(v=date_decimal(seq(1820, 1930, by=10)), col="grey")
 The \code{\link{lynx}} dataset in base \R is similar, except that it (i) contains data for only a single geographic region (instead of all eleven regions), (ii) has an obvious typo (compared to its quoted source).
 }
 \keyword{datasets}
-

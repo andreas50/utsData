@@ -21,4 +21,3 @@ lynx_1942 <- import_lynx_1942()
 }
 \keyword{datasets}
 \keyword{internal}
-

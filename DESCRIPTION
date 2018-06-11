@@ -1,11 +1,11 @@
 Package: utsData
-Version: 0.2.1
-Date: 2017-03-10
+Version: 0.2.1.9000
+Date: 2018-06-11
 Title: Example Data Sets of Unevenly Spaced Time Series
 Author: Andreas Eckner <andreas@eckner.com>
 Maintainer: Andreas Eckner <andreas@eckner.com>
 Depends:
-    R (>= 2.10),
+    R (>= 3.1),
     lubridate,
     uts,
     utsMultivariate
@@ -18,4 +18,4 @@ Description: Example datasets of unevenly spaced time series. The datasets can
 License: GPL-2 | GPL-3
 URL: www.eckner.com
 LazyData: true
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.1
