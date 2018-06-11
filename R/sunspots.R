@@ -44,7 +44,7 @@ download_sunspots_daily <- function()
 #'
 #' @format A \code{\link[utsMultivariate]{uts_vector}} object. The first time series contains the estimated daily total number of sunspots. The second time series is the estimated standard deviation of the raw numbers provided by all measurement stations. The third time series contains the number of observations used to compute the daily estimate. 
 #'
-#' @source This dataset was imported by \code{\link{download_sunspots_daily}} in March 2017 from \url{http://www.sidc.be/silso/datafiles}. For a detailed description see \url{http://www.sidc.be/silso/infosndtot}.
+#' @source This dataset was imported by \code{\link{download_sunspots_daily}} in June 2018 from \url{http://www.sidc.be/silso/datafiles}. For a detailed description see \url{http://www.sidc.be/silso/infosndtot}.
 #' @source WDC-SILSO, Royal Observatory of Belgium, Brussels
 #' 
 #' @seealso \code{\link{download_sunspots_daily}} gets the most recent data.
