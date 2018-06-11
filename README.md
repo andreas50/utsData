@@ -23,3 +23,34 @@ remotes::install_github("andreas50/utsData")
 ```
 
 ### Sample Code
+
+``` r
+# Mauna Loa atmospheric CO2 concentration
+plot(co2_ml)
+```
+
+![](man/co2_plot-1.svg)
+
+``` r
+# Most consecutive observations are one month apart
+table(round(diff(time(co2_ml)) / 365 * 12))
+#> 
+#>   1   2   4 
+#> 710   4   1
+```
+
+``` r
+# Grape harvest dates (relative to Augst 31st) for Bordeaux region
+plot(grapes$Bordeaux, max_dt=dyears(2), type="o", cex=0.5)
+```
+
+![](man/grapes_plot-1.svg)
+
+``` r
+# Same, but plot 20-year two-sided rolling average
+if (requireNamespace("utsOperators", quietly=TRUE)) {
+  plot(utsOperators::rolling_apply(grapes$Burgundy, width=dyears(20), FUN=mean, align="center"))
+}
+```
+
+![](man/grapes_plot-2.svg)
