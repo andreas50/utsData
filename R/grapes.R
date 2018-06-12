@@ -19,7 +19,7 @@ download_grapes <- function()
     stop("Package 'XLConnect' needed for this function to work")
   
   # Download data into temporary file
-  file <- "http://www1.ncdc.noaa.gov/pub/data/paleo/historical/europe/europe2012ghd.xls"
+  file <- "https://www1.ncdc.noaa.gov/pub/data/paleo/historical/europe/europe2012ghd.xls"
   message("Downloading the Western Europe 650 Year Grape Harvest Date Database from ", file)
   message("Please see https://www.ncdc.noaa.gov/paleo/study/13194 for a detailed description.")
   tmp_file <- tempfile()
@@ -52,7 +52,7 @@ download_grapes <- function()
 #'
 #' @format A \code{\link[utsMultivariate]{uts_vector}} object. Harvest dates are presented as the number of days after 31 August.
 #'
-#' @source This dataset was imported by \code{\link{download_grapes}} in January 2016 from a website by the \href{https://www.ncdc.noaa.gov/cdo/f?p=519:1:0::::P1_STUDY_ID:13194}{NOAA National Climatic Data Center}.
+#' @source This dataset was imported by \code{\link{download_grapes}} in June 2018 from a website by the \href{https://www.ncdc.noaa.gov/cdo/f?p=519:1:0::::P1_STUDY_ID:13194}{NOAA National Climatic Data Center}.
 #' @source Daux, V., I. Garcia de Cortazar-Atauri, P. Yiou, I. Chuine, E. Garnier, E. Le Roy Ladurie, O. Mestre, and J. Tardaguila. 2011. An open-database of Grape Harvest dates for climate research: data description and quality assessment. Climate of the Past, Vol. 8, pp. 1403-1418, 2012 www.clim-past.net/8/1403/2012/ doi:10.5194/cp-8-1403-2012
 #' 
 #' @name grapes
