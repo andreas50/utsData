@@ -35,7 +35,7 @@ remotes::install_github("andreas50/utsData")
 
 ``` r
 # Mauna Loa atmospheric CO2 concentration
-plot(co2_ml)
+plot(co2_ml, cex.axis=0.8)
 ```
 
 ![](man/co2_plot-1.svg)
@@ -51,7 +51,7 @@ table(round(diff(time(co2_ml)) / 365 * 12))
 ``` r
 # Grape harvest dates (relative to August 31st) for Bordeaux region
 # -) observations less than 2 years apart are connected by a line in the polot
-plot(grapes$Bordeaux, max_dt=dyears(2), type="o", cex=0.5)
+plot(grapes$Bordeaux, max_dt=dyears(2), type="o", cex=0.5, cex.axis=0.8)
 ```
 
 ![](man/grapes_plot-1.svg)
@@ -59,7 +59,7 @@ plot(grapes$Bordeaux, max_dt=dyears(2), type="o", cex=0.5)
 ``` r
 # Same, but plot 20-year two-sided rolling average
 if (requireNamespace("utsOperators", quietly=TRUE)) {
-  plot(utsOperators::rolling_apply(grapes$Burgundy, width=dyears(20), FUN=mean, align="center"))
+  plot(utsOperators::rolling_apply(grapes$Burgundy, width=dyears(20), FUN=mean, align="center"), cex.axis=0.8)
 }
 ```
 
