@@ -16,7 +16,16 @@ library(utsData)
 
 ### Introduction
 
-This package provides example datasets of multivariate unevenly spaced time series. The data can be loaded, viewed, plotted, and analyzed using the [uts](https://github.com/andreas50/uts), [utsMultivariate](https://github.com/andreas50/utsMultivariate), and utsTrendSeasonality (coming soon) `R` packages.
+This package provides example datasets of univariate and multivariate unevenly spaced time series:
+
+* Annual Canadian lynx trappings (1821-1939)
+* Atmospheric CO2 reconstruction (20 million years)
+* Daily sunspot numbers (1818-now)
+* Grape harvest dates (1354-2007)
+* Mauna Loa atmospheric CO2 concentration (1958-now)
+* Paris monthly precipitation (1688-2009)
+
+The data can be loaded, viewed, plotted, and analyzed using the [uts](https://github.com/andreas50/uts), [utsMultivariate](https://github.com/andreas50/utsMultivariate), and utsTrendSeasonality (coming soon) `R` packages.
 
 
 ### Installation
